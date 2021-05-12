@@ -11,8 +11,27 @@ body {
   padding: 0;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  margin: 0 auto;
+  max-width: 1024px;
+
+  img {
+    max-width: 219px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 article {
-  min-height: 96vh;
+  margin: 0 auto;
+  max-width: 1024px;
+  min-height: 100vh;
 }
 
 .side_box {
@@ -20,7 +39,7 @@ article {
   // margin-left: auto;
   position: fixed;
   right: 2rem;
-  bottom: 5rem;
+  bottom: 1.6rem;
 
   .button {
     &_1,
@@ -79,6 +98,8 @@ footer {
   min-height: 40px;
 
   .footer_child {
+    display: block;
+    padding: 10px;
     margin: 0 auto;
     font-family: "Do Hyeon", sans-serif;
     display: flex;
@@ -90,11 +111,28 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    margin: 0 auto;
+    max-width: 1024px;
+
+    img {
+      max-width: 219px;
+    }
+
+    p {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
   footer {
     background-color: black;
     height: 40px;
 
     .footer_child {
+      padding: 0;
       height: 100%;
       margin: 0 auto;
       font-family: "Do Hyeon", sans-serif;
