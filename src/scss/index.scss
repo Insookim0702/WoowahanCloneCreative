@@ -1,3 +1,5 @@
+@import "./variable";
+
 html {
   font-size: 14px;
 }
@@ -16,7 +18,7 @@ header {
   flex-direction: column;
   padding: 30px 10px;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: $MAX_WIDHT;
 
   img {
     max-width: 219px;
@@ -28,10 +30,9 @@ header {
     align-items: flex-end;
   }
 }
-article {
-  margin: 0 auto;
-  max-width: 1024px;
-  min-height: 100vh;
+
+h1 {
+  font-size: 3em;
 }
 
 .side_box {
@@ -104,19 +105,53 @@ footer {
     font-family: "Do Hyeon", sans-serif;
     display: flex;
     justify-content: flex-start;
-
     flex-direction: column;
     color: #eee;
   }
 }
+@media (max-width: 725px) {
+  article {
+    padding: 20px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // flex-direction: column;
 
-@media (min-width: 1024px) {
+    .project {
+      border-top: 3px solid black;
+      width: 96vw;
+      min-height: 50vh;
+    }
+  }
+}
+@media (max-width: 1025px) and (min-width: 726px) {
+  article {
+    padding: 10px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // flex-direction: column;
+
+    .project {
+      border-top: 3px solid black;
+      width: 48vw;
+      max-width: 600px;
+      min-height: 50vh;
+    }
+  }
+}
+
+@media (min-width: 1026px) {
   header {
     display: flex;
     flex-direction: row;
-    padding: 30px 0px;
+    padding: 30px 10px;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: $MAX_WIDHT;
 
     img {
       max-width: 219px;
@@ -127,6 +162,24 @@ footer {
       align-items: flex-end;
     }
   }
+
+  article {
+    margin: 0 auto;
+    max-width: $MAX_WIDHT;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    .project {
+      border-top: 3px solid black;
+      width: 32vw;
+      max-width: 444px;
+      min-height: 500px;
+    }
+  }
+
   footer {
     background-color: black;
     height: 40px;
@@ -140,7 +193,7 @@ footer {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      max-width: 1024px;
+      max-width: $MAX_WIDHT;
       color: #eee;
     }
   }
