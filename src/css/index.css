@@ -21,8 +21,15 @@ header {
     display: flex;
     align-items: flex-end; }
 
+h4 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 1.4em; }
+
 h1 {
-  font-size: 3em; }
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 0px; }
 
 .side_box {
   position: fixed;
@@ -127,6 +134,27 @@ footer {
       width: 32vw;
       max-width: 444px;
       min-height: 500px; }
+      article .project .github_button {
+        position: absolute;
+        bottom: 50px;
+        background-color: #eee;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 2px 3px #d2cfcf;
+        border-radius: 15px; }
+        article .project .github_button img {
+          width: 50px;
+          height: 50px; }
+      article .project .none_box {
+        position: absolute;
+        width: 444px;
+        height: 500px;
+        background-color: transparent; }
+        article .project .none_box a {
+          width: 100%;
+          height: 100%; }
+      article .project .skills_box img {
+        width: 3rem; }
 
   footer {
     background-color: black;
