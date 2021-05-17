@@ -26,6 +26,7 @@ header {
   }
 
   p {
+    font-size: 3vw;
     display: flex;
     align-items: flex-end;
   }
@@ -116,7 +117,14 @@ footer {
     color: #eee;
   }
 }
+
 @media (max-width: 725px) {
+  header {
+    p {
+      font-size: 3.4vw;
+    }
+  }
+
   article {
     padding: 20px;
     margin: 0 auto;
@@ -128,12 +136,31 @@ footer {
 
     .project {
       border-top: 3px solid black;
-      width: 96vw;
+      width: 92vw;
       min-height: 50vh;
+
+      .none_box {
+        position: absolute;
+        width: 92vw;
+        height: 518px;
+        background-color: transparent;
+      }
+
+      .skills_box {
+        img {
+          width: 2.1rem;
+        }
+      }
     }
   }
 }
 @media (max-width: 1025px) and (min-width: 726px) {
+  header {
+    p {
+      font-size: 3.4vw;
+    }
+  }
+
   article {
     padding: 10px;
     margin: 0 auto;
@@ -146,8 +173,20 @@ footer {
     .project {
       border-top: 3px solid black;
       width: 48vw;
-      max-width: 600px;
       min-height: 50vh;
+
+      .none_box {
+        position: absolute;
+        width: 48vw;
+        height: 518px;
+        background-color: transparent;
+      }
+
+      .skills_box {
+        img {
+          width: 2.3rem;
+        }
+      }
     }
   }
 }
@@ -165,6 +204,7 @@ footer {
     }
 
     p {
+      font-size: 1.3vw;
       display: flex;
       align-items: flex-end;
     }
@@ -202,8 +242,8 @@ footer {
 
       .none_box {
         position: absolute;
-        width: 444px;
-        height: 500px;
+        width: 32vw;
+        height: 518px;
         background-color: transparent;
 
         a {
@@ -214,7 +254,7 @@ footer {
 
       .skills_box {
         img {
-          width: 3rem;
+          width: 2.3rem;
         }
       }
     }

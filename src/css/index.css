@@ -18,6 +18,7 @@ header {
     max-width: 219px;
     margin-bottom: 10px; }
   header p {
+    font-size: 3vw;
     display: flex;
     align-items: flex-end; }
 
@@ -84,6 +85,9 @@ footer {
     color: #eee; }
 
 @media (max-width: 725px) {
+  header p {
+    font-size: 3.4vw; }
+
   article {
     padding: 20px;
     margin: 0 auto;
@@ -93,9 +97,19 @@ footer {
     justify-content: space-between; }
     article .project {
       border-top: 3px solid black;
-      width: 96vw;
-      min-height: 50vh; } }
+      width: 92vw;
+      min-height: 50vh; }
+      article .project .none_box {
+        position: absolute;
+        width: 92vw;
+        height: 518px;
+        background-color: transparent; }
+      article .project .skills_box img {
+        width: 2.1rem; } }
 @media (max-width: 1025px) and (min-width: 726px) {
+  header p {
+    font-size: 3.4vw; }
+
   article {
     padding: 10px;
     margin: 0 auto;
@@ -106,8 +120,14 @@ footer {
     article .project {
       border-top: 3px solid black;
       width: 48vw;
-      max-width: 600px;
-      min-height: 50vh; } }
+      min-height: 50vh; }
+      article .project .none_box {
+        position: absolute;
+        width: 48vw;
+        height: 518px;
+        background-color: transparent; }
+      article .project .skills_box img {
+        width: 2.3rem; } }
 @media (min-width: 1026px) {
   header {
     display: flex;
@@ -118,6 +138,7 @@ footer {
     header img {
       max-width: 219px; }
     header p {
+      font-size: 1.3vw;
       display: flex;
       align-items: flex-end; }
 
@@ -147,14 +168,14 @@ footer {
           height: 50px; }
       article .project .none_box {
         position: absolute;
-        width: 444px;
-        height: 500px;
+        width: 32vw;
+        height: 518px;
         background-color: transparent; }
         article .project .none_box a {
           width: 100%;
           height: 100%; }
       article .project .skills_box img {
-        width: 3rem; }
+        width: 2.3rem; }
 
   footer {
     background-color: black;
