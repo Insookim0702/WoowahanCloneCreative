@@ -150,6 +150,8 @@ footer {
     footer .footer_child {
       padding: 10px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
       max-width: 1360px;
       color: #eee; } }
 @media (max-width: 1065px) and (min-width: 726px) {
