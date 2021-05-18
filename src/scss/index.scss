@@ -114,8 +114,6 @@ article {
 }
 
 .side_box {
-  // float: right;
-  // margin-left: auto;
   position: fixed;
   right: 2rem;
   bottom: 1.6rem;
@@ -230,6 +228,9 @@ footer {
     .footer_child {
       padding: 10px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
       max-width: $MAX_WIDHT;
       color: #eee;
     }
