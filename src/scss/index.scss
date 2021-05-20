@@ -20,11 +20,13 @@ mark::before {
 
 a {
     color: #2ac1bc;
+    font-size: 1.1rem;
 }
 
 body {
     margin: 0;
     padding: 0;
+    // min-width: 600px;
 }
 
 header {
@@ -53,9 +55,9 @@ h4 {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.skill_label {
+.label {
     margin: 0;
-    margin-top: 16px;
+    margin-top: 80px;
     font-size: 1.4em;
     color: #2ac1bc;
 }
@@ -164,9 +166,9 @@ article {
     .fcontent {
         display: none;
         position: fixed;
-        // display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: white;
         bottom: 5.8rem;
         right: 7rem;
         width: 56vw;
@@ -182,7 +184,7 @@ article {
         }
     }
 }
-
+//footer의 width가 900px보다 클 경우, footer의 내용들은 가로 정렬
 footer {
     background-color: black;
     min-height: 40px;
@@ -196,6 +198,24 @@ footer {
         justify-content: space-between;
         flex-direction: row;
         color: #eee;
+    }
+}
+
+//footer의 width가 900px보다 작을 경우, footer의 내용들은 세로 정렬
+@media (max-width: 900px) {
+    footer {
+        background-color: black;
+        height: 100%;
+
+        .footer_child {
+            padding: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            max-width: $MAX_WIDHT;
+            color: #eee;
+        }
     }
 }
 
@@ -225,20 +245,6 @@ footer {
                 height: 80px;
                 cursor: pointer;
             }
-        }
-    }
-    footer {
-        background-color: black;
-        height: 100%;
-
-        .footer_child {
-            padding: 10px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-
-            max-width: $MAX_WIDHT;
-            color: #eee;
         }
     }
 }

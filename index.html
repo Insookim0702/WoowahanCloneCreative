@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="src/css/index.css" />
         <link rel="stylesheet" href="src/css/default.css" />
+        <!-- <link rel="stylesheet" href="src/css/tooltip.css" /> -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -19,86 +20,106 @@
         </header>
         <article>
             <div class="project">
-                <img src="./src/img/todoList.png" alt="" />
+                <a class="project_img" href="https://insookim0702.github.io/TheMayWork/" target="_brank">
+                    <img src="./src/img/todoList.png" alt="" />
+                </a>
                 <h1>TodoList</h1>
                 <h4>투두리스트 기능만 있는 웹입니다.</h4>
                 <p class="project_period">2021년 05월 01일부터 2021년 05월 03일까지.</p>
-                <h4 class="skill_label">사용기술</h4>
+                <h4 class="label">사용기술</h4>
                 <div class="skills_box">
                     <img src="./src/img/html.png" alt="" />
                     <img src="./src/img/css.png" alt="" />
                     <img src="./src/img/js.png" alt="" />
+                    <img src="./src/img/github.png" alt="" />
                 </div>
                 <a target="_brank" href="https://github.com/Insookim0702/TheMayWork">깃허브 코드 주소</a>
-                <h4 class="skill_label">설명</h4>
+                <h4 class="label">설명</h4>
                 <p class="desc">
                     순수 HTML, CSS, Javascript만을 사용해서 개발한 웹입니다. '할 일'을 저장할 때는 서버를 사용하지 않고, 브라우저의 <mark>Local storage</mark>에 저장하도록 구현했습니다. 일자를 입력할
                     때에는 html input에 <mark>type="date"</mark>를 사용했습니다. 반응형으로 구현했습니다.
                 </p>
-                <h4 class="skill_label">어려웠던 점</h4>
-                <h4 class="skill_label">개발자</h4>
+
+                <p>기능1: LocalStorage에 저장되는 할 일.</p>
+                <h4 class="label">어려웠던 점</h4>
+                <h4 class="label">개발자</h4>
                 <p>김인수</p>
                 <!-- <div class="more_btn">더보기</div> -->
             </div>
+
             <div class="project">
-                <img src="" alt="" />
+                <a class="project_img" href="https://insookim0702.github.io/TheBigSalad/" target="_brank">
+                    <img src="" alt="" />
+                </a>
                 <iframe style="width: 100%; height: 500px" src="https://insookim0702.github.io/TheBigSalad/" frameborder="0"></iframe>
                 <h1>Resume</h1>
                 <h4>저의 이력서를 만들었습니다.</h4>
                 <p class="project_period">2021년 04월 16일부터 지금까지.</p>
-                <h4 class="skill_label">사용기술</h4>
+                <h4 class="label">사용기술</h4>
                 <div class="skills_box">
                     <img src="./src/img/html.png" alt="" />
                     <img src="./src/img/css.png" alt="" />
                     <img src="./src/img/js.png" alt="" />
+                    <img src="./src/img/github.png" alt="" />
                 </div>
                 <a target="_brank" href="https://github.com/Insookim0702/TheBigSalad">깃허브 코드 주소</a>
-                <h4 class="skill_label">설명</h4>
+                <h4 class="label">설명</h4>
                 <p class="desc">
-                    순수 HTML, CSS, Javascript만을 사용해서 개발한 웹입니다. 내용적으로도 제 경력사항과 기술사항을 모두 기록해 놓고 갱신하고 있습니다. 표시되는 시간이나 기간 및 날짜는 최신의 날짜가
-                    반영될 수 있도록 javascript로 계산되어서 보여지도록 구현하였습니다. 주요 기능으로는 <mark> 다크모드 </mark>, <mark>가장 상단으로 이동하는 버튼</mark> 그리고
-                    <mark>스크롤되는 크기에 따라서 목차에 하이라이트를 주는 기능</mark>을 구현해 봤습니다. 만들면서 CSS를 많이 공부할 수 있었습니다. <mark>linear-gradient</mark>나
-                    <mark>toggle</mark>같은 기능들을 새롭게 사용하면서 보기 좋은 웹을 만드려고 노력했습니다. 반응형으로 구현했습니다.
+                    순수 HTML, CSS, Javascript만을 사용해서 개발한 웹입니다. 제 경력사항과 기술사항을 모두 기록해 놓고 갱신하고 있습니다. 표시되는 시간이나 기간 및 날짜는 최신의 날짜가 반영될 수
+                    있도록 javascript로 계산되어서 보여지도록 구현하였습니다. 주요 기능으로는 <mark> 다크모드 </mark> 와 <mark>스크롤되는 크기에 따라서 목차에 하이라이트를 주는 기능</mark>을 구현해
+                    봤습니다. 만들면서 CSS와 Javascript로 인터렉티브 기능들을 개발하는 연구를 많이할 수 있었습니다. <mark>linear-gradient</mark>나 <mark>toggle</mark>같은 기능들을 새롭게 사용하면서
+                    보기 좋은 웹을 만드려고 노력했습니다. 반응형으로 구현했습니다.
                 </p>
-                <h4 class="skill_label">개발자</h4>
+
+                <p>기능 1: 다크모드</p>
+                <p>기능 2: 스크롤에 따라서 하이라이팅되는 목차</p>
+                <h4 class="label">개발자</h4>
                 <p>김인수</p>
             </div>
             <div class="project">
-                <img src="./src/img/vanilla_calc.png" alt="" />
+                <a class="project_img" href="https://insookim0702.github.io/VanillaCalculator/" target="_brank">
+                    <img src="./src/img/vanilla_calc.png" alt="" />
+                </a>
                 <!-- <iframe style="width: 100%; height: 500px" src="https://insookim0702.github.io/VanillaCalculator/" frameborder="0"></iframe> -->
                 <h1>Vanilla Calculator</h1>
                 <h4>계산기만 되는 웹입니다.</h4>
                 <p class="project_period">2021년 04월 20일부터 2021년 04월 23일까지.</p>
-                <h4 class="skill_label">사용기술</h4>
+                <h4 class="label">사용기술</h4>
                 <div class="skills_box">
                     <img src="./src/img/html.png" alt="" />
                     <img src="./src/img/css.png" alt="" />
                     <img src="./src/img/js.png" alt="" />
+                    <img src="./src/img/github.png" alt="" />
                 </div>
                 <a target="_brank" href="https://github.com/Insookim0702/VanillaCalculator">깃허브 코드 주소</a>
-                <h4 class="skill_label">설명</h4>
+                <h4 class="label">설명</h4>
                 <p class="desc">
                     디자인부터 제가 개발했습니다. 순수 HTML, CSS, Javascript만을 사용해서 개발한 웹입니다. 기능은 계산기만 됩니다. 클릭과 입력으로 수식을 작성할 수 있습니다. 입력의 경우,
                     <mark>정규식</mark>을 사용해서 한글이나 영어가 들어가면 계산을 안하고, alert 메시지를 보여주도록 개발했습니다. 반응형으로 구현했습니다.
                 </p>
-                <h4 class="skill_label">개발자</h4>
+                <p>기능1: 정규식에 걸리는 문자가 수식에 포함된 경우 Alert 메시지</p>
+
+                <h4 class="label">기획·개발자</h4>
                 <p>김인수</p>
             </div>
             <div class="project">
-                <img src="./src/img/moment.png" alt="" />
+                <a class="project_img" href="https://insookim0702.github.io/moment/" target="_brank">
+                    <img src="./src/img/moment.png" alt="" />
+                </a>
                 <h1>Moment</h1>
                 <h4>날씨+위치+시간+todoList+이미지 배경</h4>
                 <p class="project_period">2021년 02월부터 2021년 02월까지.</p>
-                <h4 class="skill_label">사용기술</h4>
+                <h4 class="label">사용기술</h4>
                 <div class="skills_box">
                     <img src="./src/img/html.png" alt="" />
                     <img src="./src/img/css.png" alt="" />
                     <img src="./src/img/js.png" alt="" />
+                    <img src="./src/img/github.png" alt="" />
                 </div>
                 <a target="_brank" href="https://github.com/Insookim0702/moment">깃허브 코드 주소</a>
-                <h4 class="skill_label">설명</h4>
+                <h4 class="label">설명</h4>
                 <p class="desc">노마드 코더의 Vanilla Javascript 강의를 들으면서 따라서 만든 웹입니다. 순수 HTML, CSS, Javascript만을 사용해서 개발한 웹입니다. 반응형으로 구현했습니다.</p>
-                <h4 class="skill_label">개발자</h4>
+                <h4 class="label">개발자</h4>
                 <p>김인수</p>
                 <!-- <div class="more_btn">더보기</div> -->
             </div>

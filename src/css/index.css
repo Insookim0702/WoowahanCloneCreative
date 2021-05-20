@@ -14,7 +14,8 @@ mark::before {
   content: mark::after, mark::before nbsp; }
 
 a {
-  color: #2ac1bc; }
+  color: #2ac1bc;
+  font-size: 1.1rem; }
 
 body {
   margin: 0;
@@ -40,9 +41,9 @@ h4 {
   font-size: 1.4em;
   font-family: 'Noto Sans KR', sans-serif; }
 
-.skill_label {
+.label {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 80px;
   font-size: 1.4em;
   color: #2ac1bc; }
 
@@ -118,6 +119,7 @@ article {
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
     bottom: 5.8rem;
     right: 7rem;
     width: 56vw;
@@ -143,6 +145,17 @@ footer {
     flex-direction: row;
     color: #eee; }
 
+@media (max-width: 900px) {
+  footer {
+    background-color: black;
+    height: 100%; }
+    footer .footer_child {
+      padding: 10px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      max-width: 1360px;
+      color: #eee; } }
 @media (max-width: 725px) {
   header p {
     font-size: 3.4vw; }
@@ -158,18 +171,7 @@ footer {
         border: 2px solid black;
         width: 92vw;
         height: 80px;
-        cursor: pointer; }
-
-  footer {
-    background-color: black;
-    height: 100%; }
-    footer .footer_child {
-      padding: 10px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      max-width: 1360px;
-      color: #eee; } }
+        cursor: pointer; } }
 @media (max-width: 1065px) and (min-width: 726px) {
   header p {
     font-size: 2vw; }
