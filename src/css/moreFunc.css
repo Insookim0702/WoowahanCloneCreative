@@ -1,0 +1,31 @@
+.func_desc {
+  margin-bottom: 50px; }
+  .func_desc_more_btn {
+    color: #2ac1bc;
+    cursor: pointer; }
+  .func_desc_more_btn:hover {
+    font-weight: 600;
+    text-decoration: underline; }
+  .func_desc_more {
+    display: none; }
+
+.func_desc_cut_btn {
+  color: #ff4757;
+  cursor: pointer; }
+
+.func_desc_cut_btn:hover {
+  font-weight: 600;
+  text-decoration: underline; }
+
+.more_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: 2px solid black;
+  width: 100%;
+  height: 50px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=moreFunc.css.map */
