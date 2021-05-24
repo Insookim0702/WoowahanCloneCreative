@@ -20,130 +20,145 @@
             <p>우아한 Woowa 크리에이티브 사이트는 제가 만들어온 창의개발의지혁신 프로젝트를 시간 순으로 모아 놓은 곳입니다.</p>
         </header>
         <article>
-            <div class="project">
-                <a class="project_img" href="https://insookim0702.github.io/TheMayWork/" target="_brank">
-                    <img src="./src/img/todoList.png" alt="" />
-                </a>
-                <h1>TodoList</h1>
-                <h4>투두리스트 기능만 있는 웹입니다.</h4>
-                <p class="project_period">2021년 05월 01일부터 2021년 05월 03일까지.</p>
-                <h4 class="label">사용기술</h4>
-                <div class="skills_box">
-                    <img src="./src/img/html.png" alt="" />
-                    <img src="./src/img/css.png" alt="" />
-                    <img src="./src/img/js.png" alt="" />
-                    <img src="./src/img/github.png" alt="" />
+            <div class="project" id="todoList">
+                <div class="project_content">
+                    <a class="project_img" href="https://insookim0702.github.io/TheMayWork/" target="_brank">
+                        <img src="./src/img/todoList.png" alt="" />
+                    </a>
+                    <h1>TodoList</h1>
+                    <h4>투두리스트 기능만 있는 웹입니다.</h4>
+                    <p class="project_period">2021년 05월 01일부터 2021년 05월 03일까지.</p>
+                    <h4 class="label">사용기술</h4>
+                    <div class="skills_box">
+                        <img src="./src/img/html.png" alt="" />
+                        <img src="./src/img/css.png" alt="" />
+                        <img src="./src/img/js.png" alt="" />
+                        <img src="./src/img/github.png" alt="" />
+                    </div>
+                    <a target="_brank" href="https://github.com/Insookim0702/TheMayWork">깃허브 코드 주소</a>
+                    <h4 class="label">설명</h4>
+                    <p class="desc">
+                        &nbsp'할 일'을 저장할 때는 서버를 사용하지 않고, 브라우저의 <mark>Local storage</mark>에 저장하도록 구현했습니다. 일자를 입력할 때에는 html input에 <mark>type="date"</mark>를
+                        사용했습니다. 반응형으로 구현했습니다.
+                    </p>
+                    <h4 class="label">기능</h4>
+                    <h4>LocalStorage에서 데이터를 저장하고 삭제하기.</h4>
+                    <h4 class="label">어려웠던 점</h4>
+                    <h4 class="label">개발자</h4>
+                    <p>김인수</p>
                 </div>
-                <a target="_brank" href="https://github.com/Insookim0702/TheMayWork">깃허브 코드 주소</a>
-                <h4 class="label">설명</h4>
-                <p class="desc">
-                    &nbsp'할 일'을 저장할 때는 서버를 사용하지 않고, 브라우저의 <mark>Local storage</mark>에 저장하도록 구현했습니다. 일자를 입력할 때에는 html input에 <mark>type="date"</mark>를
-                    사용했습니다. 반응형으로 구현했습니다.
-                </p>
-                <h4 class="label">기능</h4>
-                <h4>LocalStorage에서 데이터를 저장하고 삭제하기.</h4>
-                <h4 class="label">어려웠던 점</h4>
-                <h4 class="label">개발자</h4>
-                <p>김인수</p>
-                <!-- <div class="more_btn">더보기</div> -->
+                <div class="more_btn" id="0">더보기</div>
+                <div class="reduce_btn" id="0">접기</div>
             </div>
 
-            <div class="project">
-                <a class="project_img" href="https://insookim0702.github.io/TheBigSalad/" target="_brank">
-                    <img src="./src/img/resume.png" alt="" />
-                </a>
-                <h1>Resume</h1>
-                <h4>제 이력서를 만들었습니다.</h4>
-                <p class="project_period">2021년 04월 16일부터 지금까지.</p>
-                <h4 class="label">사용기술</h4>
-                <div class="skills_box">
-                    <img src="./src/img/html.png" alt="" />
-                    <img src="./src/img/css.png" alt="" />
-                    <img src="./src/img/js.png" alt="" />
-                    <img src="./src/img/github.png" alt="" />
+            <div class="project" id="resume">
+                <div class="project_content">
+                    <a class="project_img" href="https://insookim0702.github.io/TheBigSalad/" target="_brank">
+                        <img src="./src/img/resume.png" alt="" />
+                    </a>
+                    <h1>Resume</h1>
+                    <h4>제 이력서를 만들었습니다.</h4>
+                    <p class="project_period">2021년 04월 16일부터 지금까지.</p>
+                    <h4 class="label">사용기술</h4>
+                    <div class="skills_box">
+                        <img src="./src/img/html.png" alt="" />
+                        <img src="./src/img/css.png" alt="" />
+                        <img src="./src/img/js.png" alt="" />
+                        <img src="./src/img/github.png" alt="" />
+                    </div>
+                    <a target="_brank" href="https://github.com/Insookim0702/TheBigSalad">깃허브 코드 주소</a>
+                    <h4 class="label">설명</h4>
+                    <p class="desc">
+                        &nbsp표시되는 시간이나 기간 및 날짜는 최신의 날짜가 반영될 수 있도록 javascript로 계산되어서 보여지도록 구현하였습니다.<br />
+                        웹을 개발하면서 처음으로 <mark> 다크모드 </mark> 와 <mark>스크롤되는 크기에 따라서 목차에 하이라이트를 주는 기능</mark>을 구현해 봤습니다. 만들면서 CSS와 Javascript로
+                        인터렉티브 기능들을 개발하는 연구를 많이할 수 있었습니다. <mark>linear-gradient</mark>나 <mark>toggle</mark>같은 기능들을 새롭게 사용하면서 보기 좋은 웹을 만드려고
+                        노력했습니다. 반응형으로 구현했습니다.
+                    </p>
+
+                    <h4 class="label">기능</h4>
+                    <h4>다크모드</h4>
+                    <video src="./src/video/myfunction-darkmode.mov" autoplay loop width="400" height="240"></video>
+                    <p class="func_desc">
+                        &nbsptransition을 사용해서 변화에 시각적인 효과를 줬습니다.
+                        <span class="func_desc_more">
+                            다크모드를 만들면서 가장 어려웠던 부분은 다크/화이트 모드를 실행해주는 버튼에 opacity transition 효과를 주는 것이었습니다. 같은자리에 변경되는 버튼의 opacity가 0 -> 1로
+                            가도록하는 기능이었습니다. 버튼이 사라지고, 새로운 버튼이 display block이 되어야 하고, 그와 동시에 opacity transition 효과가 작동하게 하는 부분이 어려웠습니다. 순서를
+                            정리해 보니, 누른 버튼은 display:none처리를 하고, 등장할 버튼을 미리 display: block처리한 다음에 opacity transition을 작동시키면 되는 것이었습니다. 그런데, opacity
+                            transition를 실행할 때에는 setTimeout으로 0.01초 뒤에 로직이 실행되게 했습니다. 순서가 보장되도록 실행해야 했기 때문입니다. <br /><br />
+                            CSS animation을 사용하면 Javascript없이 처리가 가능한 것 같습니다. fade in 일때, fade out 일때 각각 keyframe 으로 opacity 을 넣어주면 되는 것 같습니다.
+                            <span class="func_desc_cut_btn">(줄이기)</span>
+                        </span>
+                        <br /><span class="func_desc_more_btn">(더 보기)</span>
+                    </p>
+
+                    <h4>스크롤에 따라서 하이라이팅되는 목차</h4>
+                    <video src="./src/video/thebigsalad-scroll.mov" autoplay loop width="400" height="240"></video>
+                    <p class="func_desc">
+                        목차에서 사용자가 보고 있는 내용의 타이틀이 강조되도록 구현했습니다.
+                        <!-- <br /><span class="func_desc_more_btn">(더 보기)</span> -->
+                    </p>
+                    <h4 class="label">개발자</h4>
+                    <p>김인수</p>
                 </div>
-                <a target="_brank" href="https://github.com/Insookim0702/TheBigSalad">깃허브 코드 주소</a>
-                <h4 class="label">설명</h4>
-                <p class="desc">
-                    &nbsp표시되는 시간이나 기간 및 날짜는 최신의 날짜가 반영될 수 있도록 javascript로 계산되어서 보여지도록 구현하였습니다.<br />
-                    웹을 개발하면서 처음으로 <mark> 다크모드 </mark> 와 <mark>스크롤되는 크기에 따라서 목차에 하이라이트를 주는 기능</mark>을 구현해 봤습니다. 만들면서 CSS와 Javascript로 인터렉티브
-                    기능들을 개발하는 연구를 많이할 수 있었습니다. <mark>linear-gradient</mark>나 <mark>toggle</mark>같은 기능들을 새롭게 사용하면서 보기 좋은 웹을 만드려고 노력했습니다. 반응형으로
-                    구현했습니다.
-                </p>
 
-                <h4 class="label">기능</h4>
-                <h4>다크모드</h4>
-                <video src="./src/video/myfunction-darkmode.mov" autoplay loop width="400" height="240"></video>
-                <p class="func_desc">
-                    &nbsptransition을 사용해서 변화에 시각적인 효과를 줬습니다.
-                    <span class="func_desc_more">
-                        다크모드를 만들면서 가장 어려웠던 부분은 다크/화이트 모드를 실행해주는 버튼에 opacity transition 효과를 주는 것이었습니다. 같은자리에 변경되는 버튼의 opacity가 0 -> 1로
-                        가도록하는 기능이었습니다. 버튼이 사라지고, 새로운 버튼이 display block이 되어야 하고, 그와 동시에 opacity transition 효과가 작동하게 하는 부분이 어려웠습니다. 순서를 정리해
-                        보니, 누른 버튼은 display:none처리를 하고, 등장할 버튼을 미리 display: block처리한 다음에 opacity transition을 작동시키면 되는 것이었습니다. 그런데, opacity transition를 실행할
-                        때에는 setTimeout으로 0.01초 뒤에 로직이 실행되게 했습니다. 순서가 보장되도록 실행해야 했기 때문입니다. <br /><br />
-                        CSS animation을 사용하면 Javascript없이 처리가 가능한 것 같습니다. fade in 일때, fade out 일때 각각 keyframe 으로 opacity 을 넣어주면 되는 것 같습니다.
-                        <span class="func_desc_cut_btn">(줄이기)</span>
-                    </span>
-                    <br /><span class="func_desc_more_btn">(더 보기)</span>
-                </p>
-
-                <h4>스크롤에 따라서 하이라이팅되는 목차</h4>
-                <video src="./src/video/thebigSalad-scroll.mov" autoplay loop width="400" height="240"></video>
-                <p class="func_desc">
-                    목차에서 사용자가 보고 있는 내용의 타이틀이 강조되도록 구현했습니다.
-                    <!-- <br /><span class="func_desc_more_btn">(더 보기)</span> -->
-                </p>
-                <h4 class="label">개발자</h4>
-                <p>김인수</p>
+                <div class="more_btn" id="1">더보기</div>
+                <div class="reduce_btn" id="1">접기</div>
             </div>
-            <div class="project">
-                <a class="project_img" href="https://insookim0702.github.io/VanillaCalculator/" target="_brank">
-                    <img src="./src/img/vanilla_calc.png" alt="" />
-                </a>
-                <!-- <iframe style="width: 100%; height: 500px" src="https://insookim0702.github.io/VanillaCalculator/" frameborder="0"></iframe> -->
-                <h1>Vanilla Calculator</h1>
-                <h4>계산기만 되는 웹입니다.</h4>
-                <p class="project_period">2021년 04월 20일부터 2021년 04월 23일까지.</p>
-                <h4 class="label">사용기술</h4>
-                <div class="skills_box">
-                    <img src="./src/img/html.png" alt="" />
-                    <img src="./src/img/css.png" alt="" />
-                    <img src="./src/img/js.png" alt="" />
-                    <img src="./src/img/github.png" alt="" />
+            <div class="project" id="calculator">
+                <div class="project_content">
+                    <a class="project_img" href="https://insookim0702.github.io/VanillaCalculator/" target="_brank">
+                        <img src="./src/img/vanilla_calc.png" alt="" />
+                    </a>
+                    <!-- <iframe style="width: 100%; height: 500px" src="https://insookim0702.github.io/VanillaCalculator/" frameborder="0"></iframe> -->
+                    <h1>Vanilla Calculator</h1>
+                    <h4>계산기만 되는 웹입니다.</h4>
+                    <p class="project_period">2021년 04월 20일부터 2021년 04월 23일까지.</p>
+                    <h4 class="label">사용기술</h4>
+                    <div class="skills_box">
+                        <img src="./src/img/html.png" alt="" />
+                        <img src="./src/img/css.png" alt="" />
+                        <img src="./src/img/js.png" alt="" />
+                        <img src="./src/img/github.png" alt="" />
+                    </div>
+                    <a target="_brank" href="https://github.com/Insookim0702/VanillaCalculator">깃허브 코드 주소</a>
+                    <h4 class="label">설명</h4>
+                    <p class="desc">
+                        디자인부터 제가 개발했습니다. 기능은 계산기만 됩니다. 클릭과 입력으로 수식을 작성할 수 있습니다. 입력의 경우,
+                        <mark>정규식</mark>을 사용해서 한글이나 영어가 들어가면 계산을 안하고, alert 메시지를 보여주도록 개발했습니다. 반응형으로 구현했습니다.
+                    </p>
+
+                    <h4 class="label">기능</h4>
+                    <h4>정규식에 걸리는 문자가 수식에 포함된 경우 Alert 메시지</h4>
+
+                    <h4 class="label">기획·개발자</h4>
+                    <p>김인수</p>
                 </div>
-                <a target="_brank" href="https://github.com/Insookim0702/VanillaCalculator">깃허브 코드 주소</a>
-                <h4 class="label">설명</h4>
-                <p class="desc">
-                    디자인부터 제가 개발했습니다. 기능은 계산기만 됩니다. 클릭과 입력으로 수식을 작성할 수 있습니다. 입력의 경우,
-                    <mark>정규식</mark>을 사용해서 한글이나 영어가 들어가면 계산을 안하고, alert 메시지를 보여주도록 개발했습니다. 반응형으로 구현했습니다.
-                </p>
-
-                <h4 class="label">기능</h4>
-                <h4>정규식에 걸리는 문자가 수식에 포함된 경우 Alert 메시지</h4>
-
-                <h4 class="label">기획·개발자</h4>
-                <p>김인수</p>
+                <div class="more_btn" id="2">더보기</div>
+                <div class="reduce_btn" id="2">접기</div>
             </div>
-            <div class="project">
-                <a class="project_img" href="https://insookim0702.github.io/moment/" target="_brank">
-                    <img src="./src/img/moment.png" alt="" />
-                </a>
-                <h1>Moment</h1>
-                <h4>날씨+위치+시간+todoList+이미지 배경</h4>
-                <p class="project_period">2021년 02월부터 2021년 02월까지.</p>
-                <h4 class="label">사용기술</h4>
-                <div class="skills_box">
-                    <img src="./src/img/html.png" alt="" />
-                    <img src="./src/img/css.png" alt="" />
-                    <img src="./src/img/js.png" alt="" />
-                    <img src="./src/img/github.png" alt="" />
+            <div class="project" id="moment">
+                <div class="project_content">
+                    <a class="project_img" href="https://insookim0702.github.io/moment/" target="_brank">
+                        <img src="./src/img/moment.png" alt="" />
+                    </a>
+                    <h1>Moment</h1>
+                    <h4>날씨+위치+시간+todoList+이미지 배경</h4>
+                    <p class="project_period">2021년 02월부터 2021년 02월까지.</p>
+                    <h4 class="label">사용기술</h4>
+                    <div class="skills_box">
+                        <img src="./src/img/html.png" alt="" />
+                        <img src="./src/img/css.png" alt="" />
+                        <img src="./src/img/js.png" alt="" />
+                        <img src="./src/img/github.png" alt="" />
+                    </div>
+                    <a target="_brank" href="https://github.com/Insookim0702/moment">깃허브 코드 주소</a>
+                    <h4 class="label">설명</h4>
+                    <p class="desc">노마드 코더의 Vanilla Javascript 강의를 들으면서 따라서 만든 웹입니다. 반응형으로 구현했습니다.</p>
+                    <h4 class="label">개발자</h4>
+                    <p>김인수</p>
                 </div>
-                <a target="_brank" href="https://github.com/Insookim0702/moment">깃허브 코드 주소</a>
-                <h4 class="label">설명</h4>
-                <p class="desc">노마드 코더의 Vanilla Javascript 강의를 들으면서 따라서 만든 웹입니다. 반응형으로 구현했습니다.</p>
-                <h4 class="label">개발자</h4>
-                <p>김인수</p>
-                <!-- <div class="more_btn">더보기</div> -->
+                <div class="more_btn" id="3">더보기</div>
+                <div class="reduce_btn" id="3">접기</div>
             </div>
         </article>
         <div class="side_box">

@@ -80,11 +80,14 @@ article {
     min-height: 100vh;
 
     .project {
+        position: relative;
         margin-bottom: 50px;
         border-top: 3px solid black;
-        // width: 25vw;
-        // max-width: 444px;
-        // min-height: 500px;
+        height: 700px;
+        overflow: hidden;
+        // &_content {
+        //     // height: 100%;
+        // }
 
         img {
             margin: 10px 0;
@@ -194,6 +197,14 @@ footer {
 
 //footer의 width가 900px보다 작을 경우, footer의 내용들은 세로 정렬
 @media (max-width: 900px) {
+    article {
+        .project {
+            &_content {
+                height: 60rem;
+            }
+        }
+    }
+
     footer {
         background-color: black;
         height: 100%;
@@ -264,6 +275,10 @@ footer {
         .project {
             width: 48vw;
             min-height: 50vh;
+
+            &_content {
+                height: 53rem;
+            }
         }
     }
 }

@@ -63,8 +63,11 @@ article {
   margin: 0 auto;
   min-height: 100vh; }
   article .project {
+    position: relative;
     margin-bottom: 50px;
-    border-top: 3px solid black; }
+    border-top: 3px solid black;
+    height: 700px;
+    overflow: hidden; }
     article .project img {
       margin: 10px 0;
       width: 100%; }
@@ -139,6 +142,9 @@ footer {
     color: #eee; }
 
 @media (max-width: 900px) {
+  article .project_content {
+    height: 60rem; }
+
   footer {
     background-color: black;
     height: 100%; }
@@ -173,7 +179,9 @@ footer {
     padding: 10px; }
     article .project {
       width: 48vw;
-      min-height: 50vh; } }
+      min-height: 50vh; }
+      article .project_content {
+        height: 53rem; } }
 @media (min-width: 1066px) and (max-width: 1455px) {
   header {
     display: flex;
