@@ -8,14 +8,10 @@
     const PROJECT_CONTENT_LIST = document.querySelectorAll('.project_content');
 
     function init() {
-        console.log(PROJECT_CONTENT_LIST);
-
         let projectList = [];
         PROJECT_CONTENT_LIST.forEach((content) => {
             projectList.push(content.id);
         });
-
-        console.log(projectList);
 
         FUNC_DESC_MORE_BTN.addEventListener('click', () => {
             FUNC_DESC_MORE.style.display = 'block';
