@@ -85,6 +85,7 @@ article {
         border-top: 3px solid black;
         height: 700px;
         overflow: hidden;
+        transition: height 2s;
 
         img {
             margin: 10px 0;

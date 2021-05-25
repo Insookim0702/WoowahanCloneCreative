@@ -67,7 +67,8 @@ article {
     margin-bottom: 50px;
     border-top: 3px solid black;
     height: 700px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: height 2s; }
     article .project img {
       margin: 10px 0;
       width: 100%; }
