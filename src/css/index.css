@@ -91,7 +91,8 @@ article {
 .side_box {
   position: fixed;
   right: 2rem;
-  bottom: 1.6rem; }
+  bottom: 1.6rem;
+  z-index: 3; }
   .side_box .button_1, .side_box .button_2, .side_box .button_3 {
     background-color: white;
     display: flex;
@@ -142,9 +143,6 @@ footer {
     color: #eee; }
 
 @media (max-width: 900px) {
-  article .project_content {
-    height: 60rem; }
-
   footer {
     background-color: black;
     height: 100%; }
@@ -165,12 +163,7 @@ footer {
       width: 92vw;
       min-height: 50vh; }
       article .project .skills_box img {
-        width: 2.9rem; }
-      article .project .more_btn {
-        border: 2px solid black;
-        width: 92vw;
-        height: 80px;
-        cursor: pointer; } }
+        width: 2.9rem; } }
 @media (max-width: 1065px) and (min-width: 726px) {
   header p {
     font-size: 2vw; }
@@ -179,9 +172,7 @@ footer {
     padding: 10px; }
     article .project {
       width: 48vw;
-      min-height: 50vh; }
-      article .project_content {
-        height: 53rem; } }
+      min-height: 50vh; } }
 @media (min-width: 1066px) and (max-width: 1455px) {
   header {
     display: flex;

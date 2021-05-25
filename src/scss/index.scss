@@ -85,9 +85,6 @@ article {
         border-top: 3px solid black;
         height: 700px;
         overflow: hidden;
-        // &_content {
-        //     // height: 100%;
-        // }
 
         img {
             margin: 10px 0;
@@ -126,6 +123,7 @@ article {
     position: fixed;
     right: 2rem;
     bottom: 1.6rem;
+    z-index: 3;
 
     .button {
         &_1,
@@ -197,14 +195,6 @@ footer {
 
 //footer의 width가 900px보다 작을 경우, footer의 내용들은 세로 정렬
 @media (max-width: 900px) {
-    article {
-        .project {
-            &_content {
-                height: 60rem;
-            }
-        }
-    }
-
     footer {
         background-color: black;
         height: 100%;
@@ -240,13 +230,6 @@ footer {
                     width: 2.9rem;
                 }
             }
-
-            .more_btn {
-                border: 2px solid black;
-                width: $MIN_725_SIZE_WIDTH;
-                height: 80px;
-                cursor: pointer;
-            }
         }
     }
 }
@@ -275,10 +258,6 @@ footer {
         .project {
             width: 48vw;
             min-height: 50vh;
-
-            &_content {
-                height: 53rem;
-            }
         }
     }
 }
