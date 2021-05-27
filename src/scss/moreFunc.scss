@@ -43,10 +43,12 @@
     width: 99%;
     height: 50px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .reduce_btn {
-    display: none;
+    // display: none;
+    height: 0px;
     background-color: black;
     color: white;
 }

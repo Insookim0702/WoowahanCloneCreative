@@ -27,8 +27,10 @@
             btn.addEventListener('click', (event) => {
                 PROJECT_LIST[event.target.id].style.height = `${PROJECT_CONTENT_LIST[event.target.id].offsetHeight}px`;
                 //접기 버튼 보이기
-                REDUCE_BTN_LIST[event.target.id].style.display = 'flex';
-                MORE_BTN_LIST[event.target.id].style.display = 'none';
+                // MORE_BTN_LIST[event.target.id].style.display = 'none';
+                // REDUCE_BTN_LIST[event.target.id].style.display = 'flex';
+                MORE_BTN_LIST[event.target.id].style.height = '0px';
+                REDUCE_BTN_LIST[event.target.id].style.height = '50px';
             });
         });
 
@@ -36,8 +38,10 @@
             btn.addEventListener('click', (event) => {
                 PROJECT_LIST[event.target.id].style.height = `704px`;
                 // 더보기 버튼 보이기
-                REDUCE_BTN_LIST[event.target.id].style.display = 'none';
-                MORE_BTN_LIST[event.target.id].style.display = 'flex';
+                // REDUCE_BTN_LIST[event.target.id].style.display = 'none';
+                // MORE_BTN_LIST[event.target.id].style.display = 'flex';
+                REDUCE_BTN_LIST[event.target.id].style.height = '0px';
+                MORE_BTN_LIST[event.target.id].style.height = '50px';
             });
         });
     }
